@@ -1,0 +1,35 @@
+# Common tags applied to all resources
+tags:
+  cdk-stack: MyWebApp
+  team: dev
+
+name: MyWebApp
+
+network:
+  vpc:
+    cidr: 10.0.0.0/16
+    natGatewaySubnetName: Public
+    natGateways : 1
+    maxAzs: 2
+    enableDnsHostnames: True
+    enableDnsSupport: True
+
+  subnets:
+    # Backend subnet
+    - name: Private
+      cidrMask: 24
+      subnetType: PRIVATE_WITH_NAT
+    # Public subnet
+    - name: Public
+      cidrMask: 24
+      subnetType: PUBLIC
+
+  alb:
+      name: ALB
+      internet_facing: True
+      Port: 80
+
+  targetGroup:
+      name: dummyTargetGroup
+      target_group_name: dummyTargetGroup
+      port: 80
