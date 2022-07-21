@@ -28,8 +28,3 @@ network:
       name: ALB
       internet_facing: True
       Port: 80
-
-  targetGroup:
-      name: dummyTargetGroup
-      target_group_name: dummyTargetGroup
-      port: 80
