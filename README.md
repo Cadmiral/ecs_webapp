@@ -1,4 +1,4 @@
-
+[![Infrastruture Diagram](https://github.com/Cadmiral/ecs_webapp/blob/main/ecs_fargate.png?raw=true)](https://github.com/Cadmiral/ecs_webapp/blob/main/ecs_fargate.png?raw=true)
 # AWS CDK - Web App running on ECS Fargate 
 
 ## What is it?
