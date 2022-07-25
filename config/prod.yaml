@@ -1,2 +1,2 @@
-awsAccount: "116302314019"
+awsAccount: $AWS_ACCOUNT_ID
 awsRegion: us-west-2
